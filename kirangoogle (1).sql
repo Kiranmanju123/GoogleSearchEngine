@@ -1,0 +1,487 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 18, 2019 at 01:26 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `kirangoogle`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `imges`
+--
+
+CREATE TABLE `imges` (
+  `id` int(11) NOT NULL,
+  `siteUrl` varchar(512) NOT NULL,
+  `imageUrl` varchar(512) NOT NULL,
+  `alt` varchar(512) NOT NULL,
+  `title` varchar(512) NOT NULL,
+  `clicks` int(11) NOT NULL,
+  `broken` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `imges`
+--
+
+INSERT INTO `imges` (`id`, `siteUrl`, `imageUrl`, `alt`, `title`, `clicks`, `broken`) VALUES
+(335, 'http://www.bbc.com/accessibility/', 'http://www.bbc.com/staticarchive/2e00d1d53e9c3bd91993196aa19a1d88589969f0.png', 'BBC', '', 0, 0),
+(336, 'http://www.bbc.com/accessibility/', 'http://www.bbc.com/staticarchive/a8e42f8fe987b7cc9bf2d43b74b2c74b2448d2e3.png', 'BBC', '', 1, 0),
+(337, 'http://www.samsung.com/in/info/privacy/', 'http://images.samsung.com/is/image/samsung/p5/global/privacy/header-bg-privacy.jpg?$ORIGIN_JPG$', 'Image', '', 0, 0),
+(338, 'http://www.samsung.com/in/info/privacy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/flags/ico_in.gif', 'India Flag', '', 0, 0),
+(339, 'http://www.samsung.com/in/', 'http://www.samsung.com/', 'Galaxy S10+', '', 0, 0),
+(340, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/3_column_KV_A_Galaxy_Event_PC.jpg?$ORIGIN_JPG$', 'A Galaxy Event', '', 0, 0),
+(341, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/global/mkt/unpack201902/home/discover-winner-pc.jpg?$ORIGIN_JPG$', 'Galaxy Fold unfolded and laying nearly flat, seen at slight angle from the bottom', '', 0, 0),
+(342, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/IN_DISCOVER_Thumbnail_S10_plus_PC_non.jpg?$ORIGIN_JPG$', 'Galaxy S10 TVC: Wireless PowerShare', '', 1, 0),
+(343, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A50.png?$ORIGIN_PNG$', 'Galaxy A50', '', 0, 0),
+(344, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A50_2.png?$ORIGIN_PNG$', 'Galaxy A50', '', 1, 0),
+(345, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/Buds.png?$ORIGIN_PNG$', 'Galaxy Buds', '', 0, 0),
+(346, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/Buds_2.png?$ORIGIN_PNG$', 'Galaxy Buds', '', 0, 0),
+(347, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/global/mkt/unpack201902/home/curation-beyond-pc.png?$ORIGIN_PNG$', 'Two Galaxy S10 plus phones in Prism White, one seen from the rear and one seen from the front. The phone seen from the front has an abstract coral and blue gradient graphic onscreen.', '', 1, 0),
+(348, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-hot/in-uhdtv-nu7100-ua75nu7100klxl-frontblack-100870078.png?$ORIGIN_PNG$', 'UHD TV', '', 0, 0),
+(349, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-hot/in-uhdtv-nu7100-ua75nu7100klxl-lperspectiveblack-100870058.png?$ORIGIN_PNG$', 'UHD TV', '', 0, 0),
+(350, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/merchandise-section-home/M10.png?$ORIGIN_PNG$', 'Galaxy M10', '', 0, 0),
+(351, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/merchandise-section-home/M10_2.png?$ORIGIN_PNG$', 'Galaxy M10', '', 0, 0),
+(352, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/Large-NU6100_708x764b.png?$ORIGIN_PNG$', '4K UHD TV', '', 0, 0),
+(353, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallA-RT28M3022S8-1.png?$ORIGIN_PNG$', 'Refrigerators', '', 0, 0),
+(354, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallA-RT28M3022S8-2.png?$ORIGIN_PNG$', 'Refrigerators', '', 0, 0),
+(355, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallB-WW80J4243MW-1.png?$ORIGIN_PNG$', 'Washing Machines', '', 0, 0),
+(356, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallB-WW80J4243MW-2.png?$ORIGIN_PNG$', 'Washing Machines', '', 0, 0),
+(357, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallC-CE1041DSB2-1.png?$ORIGIN_PNG$', 'Microwaves', '', 0, 0),
+(358, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallC-CE1041DSB2-2.png?$ORIGIN_PNG$', 'Microwaves', '', 0, 0),
+(359, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/TV-1.png?$ORIGIN_PNG$', 'Televisions', '', 0, 0),
+(360, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/TV-2.png?$ORIGIN_PNG$', 'Televisions', '', 0, 0),
+(361, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-galaxy-tabs4-t835-sm-t835nzaains-frontgray-123662191.png?$ORIGIN_PNG$', 'Galaxy Tab S4', '', 0, 0),
+(362, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-galaxy-tabs4-t835-sm-t835nzaains-leftgray-123662175.png?$ORIGIN_PNG$', 'Galaxy Tab S4', '', 0, 0),
+(363, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A30-f.gif?$ORIGIN_GIF$', 'Galaxy A30', '', 0, 0),
+(364, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A30-B.gif?$ORIGIN_GIF$', 'Galaxy A30', '', 0, 0),
+(365, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/in-air-purifier-ax40k3020wu-ax40k3020wu-na-001-front-white.png?$ORIGIN_PNG$', 'Air Purifier', '', 0, 0),
+(366, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/in-air-purifier-ax40k3020wu-ax40k3020wu-na-006-l-perspective-white.png?$ORIGIN_PNG$', 'Air Purifier', '', 0, 0),
+(367, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home_new/Watch_262x188_GD_Front_.png?$ORIGIN_PNG$', 'Galaxy Watch (4.6cm)', '', 0, 0),
+(368, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home_new/Watch_262x188_GD_Side_.png?$ORIGIN_PNG$', 'Galaxy Watch (4.6cm)', '', 0, 0),
+(369, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-23-litre-solo-microwave-oven-ms23k3513ak-ms23k3513ak-tl-frontblack-117539157.png?$ORIGIN_PNG$', '23L Microwave Oven', '', 0, 0),
+(370, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-23-litre-solo-microwave-oven-ms23k3513ak-ms23k3513ak-tl-lperspectiveblack-117539138.png?$ORIGIN_PNG$', '23L Microwave Oven', '', 0, 0),
+(371, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-split-ac-123.png?$ORIGIN_PNG$', 'Split AC', '', 0, 0),
+(372, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-split-ac-ar18nv3xewk-ar18nv3xewknna-lperspectivewhite-88610992.png?$ORIGIN_PNG$', 'Split AC', '', 0, 0),
+(373, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-top-mount-freezer-rt30n3723s8-rt30n3723s8-hl-frontsilver-93792062.png?$ORIGIN_PNG$', '275L Convertible Refrigerator', '', 0, 0),
+(374, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-top-mount-freezer-rt30n3723s8-rt30n3723s8-hl-lperspectivesilver-93792042.png?$ORIGIN_PNG$', '275L Convertible Refrigerator', '', 0, 0),
+(375, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/level-u.png?$ORIGIN_PNG$', 'Level U', '', 0, 0),
+(376, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/level-u-2.png?$ORIGIN_PNG$', 'Level U', '', 0, 0),
+(377, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background5.jpg?$ORIGIN_JPG$', 'Samsung Within', '', 0, 0),
+(378, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background2.jpg?$ORIGIN_JPG$', 'Productivity', '', 0, 0),
+(379, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background3.jpg?$ORIGIN_JPG$', 'Entertainment', '', 0, 0),
+(380, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background4.jpg?$ORIGIN_JPG$', 'Productivity', '', 0, 0),
+(381, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/explore_brand_hub_thumbnail_v2.jpg?$ORIGIN_JPG$', 'Experience CES 2019 with Samsung', '', 0, 0),
+(382, 'http://www.samsung.com/in/web/search-orders/', 'http://www.samsung.com/data:image/gif;base64,R0lGODlhFAANAMQAAKWr087P1Lugip2k3v36/PHy8+fo6FVSjiAxj87T7qOgsvX2+/z8/LG86s6zk3dukJKPuv3+/fabAvfgnTmSRBJ9Hwp5F/ekAf///8zMzAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyM', 'India Flag', '', 0, 0),
+(383, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://cdn.samsung.com/etc/designs/smg/in/galaxy-s10/common/images/blank.gif', 'Several Galaxy S10 plus phones all laid flat and seen at an angle. All are black except the one in the middle, which is shown with a prismatic gradient onscreen with Galaxy S10 plus overlaid on top of it and the two phones on either side.', '', 0, 0),
+(384, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://www.samsung.com/in/smartphones/common/images/blank.gif', 'Galaxy S10 Official Introduction Video', '', 0, 0),
+(385, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-power_m.jpg', 'Galaxy S10 plus seen from the rear, laying flat at a 45 degree angle. As you scroll, another Galaxy S10 plus appears on top of the first Galaxy S10 plus, and the charging icon appears, demonstrating Wireless PowerShare. As you continue scrolling, a Galaxy Watch Active appears and is charged on the Galaxy S10 plus as well. ', '', 0, 0),
+(386, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-connection.jpg', 'Aerial shot of a street scene with cars driving and people walking, with lines overlaid on top to show the connectivity of Wi-Fi and LTE. ', '', 0, 0),
+(387, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-changer_back-cover_m.png', 'Galaxy S10 plus in landscape mode, propped up at a slight angle from the Bixby and volume button side with the interior hardware revealed, showing the pieces that make Galaxy S10 plus optimized for gaming.', '', 0, 0),
+(388, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://www.samsung.com/etc/designs/smg/in/galaxy-s10/common/images/blank.gif', 'Photo of the Galaxy Watch Active', '', 0, 0),
+(389, 'http://www.samsung.com/in/smartphones/galaxy-s10/buy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/configurator-pd/trade-imei.png', 'Find your imei number *#06#', '', 0, 0),
+(390, 'http://www.samsung.com/in/smartphones/galaxy-s10/buy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/configurator-pd/samsung-care.png', 'Samsung care+ text', '', 0, 0),
+(391, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m-sale-banner_new2.jpg?$ORIGIN_JPG$', 'Galaxy M Series Sale', 'Galaxy M Series Sale', 0, 0),
+(392, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m-sale-banner22-new.jpg?$ORIGIN_JPG$', 'Galaxy M Series Sale', 'Galaxy M Series Sale', 0, 0),
+(393, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m20_blue.png?$ORIGIN_PNG$', 'Galaxy M20 Ocean Blue', 'Galaxy M20 Ocean Blue', 0, 0),
+(394, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m20_black.png?$ORIGIN_PNG$', 'Galaxy M20 Charcoal Black', 'Galaxy M20 Charcoal Black', 0, 0),
+(395, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m10_blue.png?$ORIGIN_PNG$', 'Galaxy M10 Ocean Blue', 'Galaxy M10 Ocean Blue', 1, 0),
+(396, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m10_black.png?$ORIGIN_PNG$', 'Galaxy M10 Charcoal Black', 'Galaxy M10 Charcoal Black', 1, 0),
+(397, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m30_blue.jpg?$ORIGIN_JPG$', 'Galaxy M30', 'Galaxy M30', 0, 0),
+(398, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m30_black.jpg?$ORIGIN_JPG$', 'Galaxy M30', 'Galaxy M30', 0, 0),
+(399, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_kv.jpg?$ORIGIN_JPG$', 'Samsung Galaxy A Series Mobiles', 'Samsung Galaxy A Series Mobiles', 0, 0),
+(400, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_kv_mob2.jpg?$ORIGIN_JPG$', 'Samsung Galaxy A Series Mobiles', 'Samsung Galaxy A Series Mobiles', 0, 0),
+(401, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_a70_product.png?$ORIGIN_PNG$', 'Samsung Galaxy A70', 'Samsung Galaxy A70', 0, 0),
+(402, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-50-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A50', 'Samsung Galaxy A50', 1, 0),
+(403, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-30-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A30', 'Samsung Galaxy A30', 0, 0),
+(404, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-20-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A20', 'Samsung Galaxy A20', 1, 0),
+(405, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-10-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A10', 'Samsung Galaxy A10', 1, 0),
+(406, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-immerse-banner.jpg?$ORIGIN_JPG$', 'Samsung A Series - sAmoled and Infinity U Display', 'Samsung A Series - sAmoled and Infinity U Display', 0, 0),
+(407, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-immerse-banner-m.jpg?$ORIGIN_JPG$', 'Samsung A Series - sAmoled and Infinity U Display', 'Samsung A Series - sAmoled and Infinity U Display', 0, 0),
+(408, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-go-banner.jpg?$ORIGIN_JPG$', 'Samsung A Series Fast Charging', 'Samsung A Series Fast Charging', 0, 0),
+(409, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-go-banner-m.jpg?$ORIGIN_JPG$', 'Samsung A Series Fast Charging', 'Samsung A Series Fast Charging', 0, 0),
+(410, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_a70_product_small.png?$ORIGIN_PNG$', 'Samsung Galaxy A70 - Half View', 'Samsung Galaxy A70 - Half View', 0, 0),
+(411, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-50-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A50 - Half View', 'Samsung Galaxy A50 - Half View', 0, 0),
+(412, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-30-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A30 - Half View', 'Samsung Galaxy A30 - Half View', 0, 0),
+(413, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/a20_sliderimg.png?$ORIGIN_PNG$', 'Samsung Galaxy A20 - Half View', 'Samsung Galaxy A20 - Half View', 0, 0),
+(414, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-10-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A10 - Half View', 'Samsung Galaxy A10 - Half View', 0, 0),
+(415, 'http://www.samsung.com/in/microsite/galaxya/buy/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/pdp_banner.png?$ORIGIN_PNG$', 'Galaxy A', 'Galaxy A', 0, 0),
+(416, 'http://www.samsung.com/in/microsite/galaxya/buy/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/pdp_banner_mob.png?$ORIGIN_PNG$', 'Galaxy A', 'Galaxy A', 0, 0),
+(417, 'http://www.samsung.com/in/info/privacy/', 'http://images.samsung.com/is/image/samsung/p5/global/privacy/header-bg-privacy.jpg?$ORIGIN_JPG$', 'Image', '', 0, 0),
+(418, 'http://www.samsung.com/in/info/privacy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/flags/ico_in.gif', 'India Flag', '', 0, 0),
+(419, 'http://www.samsung.com/in/', 'http://www.samsung.com/', 'Galaxy S10+', '', 0, 0),
+(420, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/3_column_KV_A_Galaxy_Event_PC.jpg?$ORIGIN_JPG$', 'A Galaxy Event', '', 0, 0),
+(421, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/global/mkt/unpack201902/home/discover-winner-pc.jpg?$ORIGIN_JPG$', 'Galaxy Fold unfolded and laying nearly flat, seen at slight angle from the bottom', '', 0, 0),
+(422, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/IN_DISCOVER_Thumbnail_S10_plus_PC_non.jpg?$ORIGIN_JPG$', 'Galaxy S10 TVC: Wireless PowerShare', '', 1, 0),
+(423, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A50.png?$ORIGIN_PNG$', 'Galaxy A50', '', 0, 0),
+(424, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A50_2.png?$ORIGIN_PNG$', 'Galaxy A50', '', 1, 0),
+(425, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/Buds.png?$ORIGIN_PNG$', 'Galaxy Buds', '', 0, 0),
+(426, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/Buds_2.png?$ORIGIN_PNG$', 'Galaxy Buds', '', 0, 0),
+(427, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/global/mkt/unpack201902/home/curation-beyond-pc.png?$ORIGIN_PNG$', 'Two Galaxy S10 plus phones in Prism White, one seen from the rear and one seen from the front. The phone seen from the front has an abstract coral and blue gradient graphic onscreen.', '', 1, 0),
+(428, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-hot/in-uhdtv-nu7100-ua75nu7100klxl-frontblack-100870078.png?$ORIGIN_PNG$', 'UHD TV', '', 0, 0),
+(429, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-hot/in-uhdtv-nu7100-ua75nu7100klxl-lperspectiveblack-100870058.png?$ORIGIN_PNG$', 'UHD TV', '', 0, 0),
+(430, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/merchandise-section-home/M10.png?$ORIGIN_PNG$', 'Galaxy M10', '', 0, 0),
+(431, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/merchandise-section-home/M10_2.png?$ORIGIN_PNG$', 'Galaxy M10', '', 0, 0),
+(432, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/Large-NU6100_708x764b.png?$ORIGIN_PNG$', '4K UHD TV', '', 0, 0),
+(433, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallA-RT28M3022S8-1.png?$ORIGIN_PNG$', 'Refrigerators', '', 0, 0),
+(434, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallA-RT28M3022S8-2.png?$ORIGIN_PNG$', 'Refrigerators', '', 0, 0),
+(435, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallB-WW80J4243MW-1.png?$ORIGIN_PNG$', 'Washing Machines', '', 0, 0),
+(436, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallB-WW80J4243MW-2.png?$ORIGIN_PNG$', 'Washing Machines', '', 0, 0),
+(437, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallC-CE1041DSB2-1.png?$ORIGIN_PNG$', 'Microwaves', '', 0, 0),
+(438, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/SmallC-CE1041DSB2-2.png?$ORIGIN_PNG$', 'Microwaves', '', 0, 0),
+(439, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/TV-1.png?$ORIGIN_PNG$', 'Televisions', '', 0, 0),
+(440, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/TV-2.png?$ORIGIN_PNG$', 'Televisions', '', 0, 0),
+(441, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-galaxy-tabs4-t835-sm-t835nzaains-frontgray-123662191.png?$ORIGIN_PNG$', 'Galaxy Tab S4', '', 0, 0),
+(442, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-galaxy-tabs4-t835-sm-t835nzaains-leftgray-123662175.png?$ORIGIN_PNG$', 'Galaxy Tab S4', '', 0, 0),
+(443, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A30-f.gif?$ORIGIN_GIF$', 'Galaxy A30', '', 0, 0),
+(444, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/A30-B.gif?$ORIGIN_GIF$', 'Galaxy A30', '', 0, 0),
+(445, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/in-air-purifier-ax40k3020wu-ax40k3020wu-na-001-front-white.png?$ORIGIN_PNG$', 'Air Purifier', '', 0, 0),
+(446, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/in-air-purifier-ax40k3020wu-ax40k3020wu-na-006-l-perspective-white.png?$ORIGIN_PNG$', 'Air Purifier', '', 0, 0),
+(447, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home_new/Watch_262x188_GD_Front_.png?$ORIGIN_PNG$', 'Galaxy Watch (4.6cm)', '', 0, 0),
+(448, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home_new/Watch_262x188_GD_Side_.png?$ORIGIN_PNG$', 'Galaxy Watch (4.6cm)', '', 0, 0),
+(449, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-23-litre-solo-microwave-oven-ms23k3513ak-ms23k3513ak-tl-frontblack-117539157.png?$ORIGIN_PNG$', '23L Microwave Oven', '', 0, 0),
+(450, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-23-litre-solo-microwave-oven-ms23k3513ak-ms23k3513ak-tl-lperspectiveblack-117539138.png?$ORIGIN_PNG$', '23L Microwave Oven', '', 0, 0),
+(451, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-split-ac-123.png?$ORIGIN_PNG$', 'Split AC', '', 0, 0),
+(452, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-split-ac-ar18nv3xewk-ar18nv3xewknna-lperspectivewhite-88610992.png?$ORIGIN_PNG$', 'Split AC', '', 0, 0),
+(453, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-top-mount-freezer-rt30n3723s8-rt30n3723s8-hl-frontsilver-93792062.png?$ORIGIN_PNG$', '275L Convertible Refrigerator', '', 0, 0),
+(454, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home-bestseller/in-top-mount-freezer-rt30n3723s8-rt30n3723s8-hl-lperspectivesilver-93792042.png?$ORIGIN_PNG$', '275L Convertible Refrigerator', '', 0, 0),
+(455, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/level-u.png?$ORIGIN_PNG$', 'Level U', '', 0, 0),
+(456, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/home/level-u-2.png?$ORIGIN_PNG$', 'Level U', '', 0, 0),
+(457, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background5.jpg?$ORIGIN_JPG$', 'Samsung Within', '', 0, 0),
+(458, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background2.jpg?$ORIGIN_JPG$', 'Productivity', '', 0, 0),
+(459, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background3.jpg?$ORIGIN_JPG$', 'Entertainment', '', 0, 0),
+(460, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/Home-Explore-Background4.jpg?$ORIGIN_JPG$', 'Productivity', '', 0, 0),
+(461, 'http://www.samsung.com/in/', 'http://images.samsung.com/is/image/samsung/p5/in/explore/home/explore_brand_hub_thumbnail_v2.jpg?$ORIGIN_JPG$', 'Experience CES 2019 with Samsung', '', 0, 0),
+(462, 'http://www.samsung.com/in/web/search-orders/', 'http://www.samsung.com/data:image/gif;base64,R0lGODlhFAANAMQAAKWr087P1Lugip2k3v36/PHy8+fo6FVSjiAxj87T7qOgsvX2+/z8/LG86s6zk3dukJKPuv3+/fabAvfgnTmSRBJ9Hwp5F/ekAf///8zMzAAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyM', 'India Flag', '', 0, 0),
+(463, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://cdn.samsung.com/etc/designs/smg/in/galaxy-s10/common/images/blank.gif', 'Several Galaxy S10 plus phones all laid flat and seen at an angle. All are black except the one in the middle, which is shown with a prismatic gradient onscreen with Galaxy S10 plus overlaid on top of it and the two phones on either side.', '', 0, 0),
+(464, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://www.samsung.com/in/smartphones/common/images/blank.gif', 'Galaxy S10 Official Introduction Video', '', 0, 0),
+(465, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-power_m.jpg', 'Galaxy S10 plus seen from the rear, laying flat at a 45 degree angle. As you scroll, another Galaxy S10 plus appears on top of the first Galaxy S10 plus, and the charging icon appears, demonstrating Wireless PowerShare. As you continue scrolling, a Galaxy Watch Active appears and is charged on the Galaxy S10 plus as well. ', '', 0, 0),
+(466, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-connection.jpg', 'Aerial shot of a street scene with cars driving and people walking, with lines overlaid on top to show the connectivity of Wi-Fi and LTE. ', '', 0, 0),
+(467, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://images.samsung.com/is/image/samsung/p5/in/smartphones/galaxy-s10/images1/galaxy-s10_highlight_performance-changer_back-cover_m.png', 'Galaxy S10 plus in landscape mode, propped up at a slight angle from the Bixby and volume button side with the interior hardware revealed, showing the pieces that make Galaxy S10 plus optimized for gaming.', '', 0, 0),
+(468, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'http://www.samsung.com/etc/designs/smg/in/galaxy-s10/common/images/blank.gif', 'Photo of the Galaxy Watch Active', '', 0, 0),
+(469, 'http://www.samsung.com/in/smartphones/galaxy-s10/buy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/configurator-pd/trade-imei.png', 'Find your imei number *#06#', '', 0, 0),
+(470, 'http://www.samsung.com/in/smartphones/galaxy-s10/buy/', 'http://cdn.samsung.com/etc/designs/smg/global/imgs/configurator-pd/samsung-care.png', 'Samsung care+ text', '', 0, 0),
+(471, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m-sale-banner_new2.jpg?$ORIGIN_JPG$', 'Galaxy M Series Sale', 'Galaxy M Series Sale', 0, 0),
+(472, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m-sale-banner22-new.jpg?$ORIGIN_JPG$', 'Galaxy M Series Sale', 'Galaxy M Series Sale', 0, 0),
+(473, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m20_blue.png?$ORIGIN_PNG$', 'Galaxy M20 Ocean Blue', 'Galaxy M20 Ocean Blue', 0, 0),
+(474, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m20_black.png?$ORIGIN_PNG$', 'Galaxy M20 Charcoal Black', 'Galaxy M20 Charcoal Black', 0, 0),
+(475, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m10_blue.png?$ORIGIN_PNG$', 'Galaxy M10 Ocean Blue', 'Galaxy M10 Ocean Blue', 1, 0),
+(476, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m10_black.png?$ORIGIN_PNG$', 'Galaxy M10 Charcoal Black', 'Galaxy M10 Charcoal Black', 1, 0),
+(477, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m30_blue.jpg?$ORIGIN_JPG$', 'Galaxy M30', 'Galaxy M30', 0, 0),
+(478, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxy-m/m30_black.jpg?$ORIGIN_JPG$', 'Galaxy M30', 'Galaxy M30', 0, 0),
+(479, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_kv.jpg?$ORIGIN_JPG$', 'Samsung Galaxy A Series Mobiles', 'Samsung Galaxy A Series Mobiles', 0, 0),
+(480, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_kv_mob2.jpg?$ORIGIN_JPG$', 'Samsung Galaxy A Series Mobiles', 'Samsung Galaxy A Series Mobiles', 0, 0),
+(481, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_a70_product.png?$ORIGIN_PNG$', 'Samsung Galaxy A70', 'Samsung Galaxy A70', 0, 0),
+(482, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-50-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A50', 'Samsung Galaxy A50', 1, 0),
+(483, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-30-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A30', 'Samsung Galaxy A30', 0, 0),
+(484, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-20-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A20', 'Samsung Galaxy A20', 1, 0),
+(485, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-10-product.png?$ORIGIN_PNG$', 'Samsung Galaxy A10', 'Samsung Galaxy A10', 1, 0),
+(486, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-immerse-banner.jpg?$ORIGIN_JPG$', 'Samsung A Series - sAmoled and Infinity U Display', 'Samsung A Series - sAmoled and Infinity U Display', 0, 0),
+(487, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-immerse-banner-m.jpg?$ORIGIN_JPG$', 'Samsung A Series - sAmoled and Infinity U Display', 'Samsung A Series - sAmoled and Infinity U Display', 0, 0),
+(488, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-go-banner.jpg?$ORIGIN_JPG$', 'Samsung A Series Fast Charging', 'Samsung A Series Fast Charging', 0, 0),
+(489, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/ready-action-go-banner-m.jpg?$ORIGIN_JPG$', 'Samsung A Series Fast Charging', 'Samsung A Series Fast Charging', 0, 0),
+(490, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya_a70_product_small.png?$ORIGIN_PNG$', 'Samsung Galaxy A70 - Half View', 'Samsung Galaxy A70 - Half View', 0, 0),
+(491, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-50-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A50 - Half View', 'Samsung Galaxy A50 - Half View', 0, 0),
+(492, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-30-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A30 - Half View', 'Samsung Galaxy A30 - Half View', 0, 0),
+(493, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/a20_sliderimg.png?$ORIGIN_PNG$', 'Samsung Galaxy A20 - Half View', 'Samsung Galaxy A20 - Half View', 0, 0),
+(494, 'http://www.samsung.com/in/microsite/galaxya/', 'http://images.samsung.com/is/image/samsung/p5/in/microsite/galaxya/galaxya-10-product-bottom.png?$ORIGIN_PNG$', 'Samsung Galaxy A10 - Half View', 'Samsung Galaxy A10 - Half View', 0, 0),
+(495, 'https://www.secureserver.net?pl_id=329330', 'https://img1.wsimg.com/private_label/329330/desktopLogo.43db939f6da110478f7848ee4edabde8.png', 'Daily Hunt Domains', '', 0, 0),
+(496, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Courbet_Q_22265_%28cropped%29.jpg/200px-Courbet_Q_22265_%28cropped%29.jpg', 'The ship before 1922', '', 0, 0),
+(497, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/20181001_ChathamsA9D3_444_DxO_%28cropped%29.jpg/120px-20181001_ChathamsA9D3_444_DxO_%28cropped%29.jpg', 'Chatham shag', '', 0, 0),
+(498, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Incendie_Notre_Dame_de_Paris.jpg/120px-Incendie_Notre_Dame_de_Paris.jpg', 'Notre-Dame Cathedral on fire', '', 0, 0),
+(499, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/BARUCH%2C_BERNARD_2.jpg/120px-BARUCH%2C_BERNARD_2.jpg', 'Bernard Baruch', '', 0, 0),
+(500, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Myioborus_torquatus_Santa_Elena.JPG/399px-Myioborus_torquatus_Santa_Elena.JPG', 'Collared whitestart', '', 0, 0),
+(501, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png', 'Commons', '', 0, 0),
+(502, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/35px-Mediawiki-logo.png', 'MediaWiki', '', 0, 0),
+(503, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png', 'Meta-Wiki', '', 0, 0),
+(504, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png', 'Wikibooks', '', 0, 0),
+(505, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png', 'Wikidata', '', 0, 0),
+(506, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png', 'Wikinews', '', 0, 0),
+(507, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png', 'Wikiquote', '', 0, 0),
+(508, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png', 'Wikisource', '', 0, 0),
+(509, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png', 'Wikispecies', '', 0, 0),
+(510, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/41px-Wikiversity_logo_2017.svg.png', 'Wikiversity', '', 0, 0),
+(511, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/35px-Wikivoyage-Logo-v3-icon.svg.png', 'Wikivoyage', '', 0, 0),
+(512, 'http://en.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/35px-Wiktionary-logo-v2.svg.png', 'Wiktionary', '', 0, 0),
+(513, 'http://en.wikipedia.org/', 'http://en.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(514, 'http://en.wikipedia.org/', 'http://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(515, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/OOjs_UI_icon_ellipsis.svg/20px-OOjs_UI_icon_ellipsis.svg.png', 'Acciones adicionales', 'Acciones adicionales', 0, 0),
+(516, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_the_Gebora-es.svg/150px-Battle_of_the_Gebora-es.svg.png', 'Batalla de GÃ©vora', '', 0, 0),
+(517, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Etna_eruption_seen_from_the_International_Space_Station.jpg/500px-Etna_eruption_seen_from_the_International_Space_Station.jpg', 'ErupciÃ³n del Etna en 2002, vista desde la EEI', '', 0, 0),
+(518, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Nuvola_apps_package_graphics.svg/20px-Nuvola_apps_package_graphics.svg.png', 'Artes', '', 0, 0),
+(519, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sciences_humaines.svg/20px-Sciences_humaines.svg.png', 'Ciencias sociales', '', 0, 0),
+(520, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Science-symbol-2.svg/20px-Science-symbol-2.svg.png', 'Ciencias naturales', '', 0, 0),
+(521, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ambox_globe.svg/20px-Ambox_globe.svg.png', 'GeografÃ­a', '', 0, 0),
+(522, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/History2.svg/20px-History2.svg.png', 'Historia', '', 0, 0),
+(523, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Vote3_final.png/20px-Vote3_final.png', 'PolÃ­tica', '', 0, 0),
+(524, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/P_religion_world.svg/20px-P_religion_world.svg.png', 'ReligiÃ³n', '', 0, 0),
+(525, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Tecno-rueda.svg/20px-Tecno-rueda.svg.png', 'TecnologÃ­as', '', 0, 0),
+(526, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2007-10-23_Jaded_Heart_und_UFO%2C_Kantine%2C_Koeln%2C_Paul_Raymond%2C_IMG_7091.jpg/120px-2007-10-23_Jaded_Heart_und_UFO%2C_Kantine%2C_Koeln%2C_Paul_Raymond%2C_IMG_7091.jpg', 'El mÃºsico britÃ¡nico Paul Raymond', '', 0, 0),
+(527, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Germ%C3%A1n_Burgos_-_01.jpg/120px-Germ%C3%A1n_Burgos_-_01.jpg', 'GermÃ¡n Burgos - 01.jpg', '', 0, 0),
+(528, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Notification-icon-Commons-logo.svg/30px-Notification-icon-Commons-logo.svg.png', 'Wikimedia Commons', '', 0, 0),
+(529, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/30px-Notification-icon-Wiktionary-logo.svg.png', 'Wikcionario', '', 0, 0),
+(530, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/30px-Notification-icon-Wikidata-logo.svg.png', 'Wikidata', '', 0, 0),
+(531, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Notification-icon-Wikibooks-logo.svg/30px-Notification-icon-Wikibooks-logo.svg.png', 'Wikilibros', '', 0, 0),
+(532, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Notification-icon-Wikinews-logo.svg/30px-Notification-icon-Wikinews-logo.svg.png', 'Wikinoticias', '', 0, 0),
+(533, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/30px-Notification-icon-Wikiquote.svg.png', 'Wikiquote', '', 0, 0),
+(534, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikisource-logo.svg/30px-Notification-icon-Wikisource-logo.svg.png', 'Wikisource', '', 0, 0),
+(535, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Notification-icon-Wikispecies-logo.svg/30px-Notification-icon-Wikispecies-logo.svg.png', 'Wikispecies', '', 0, 0),
+(536, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Notification-icon-Wikiversity-logo.svg/30px-Notification-icon-Wikiversity-logo.svg.png', 'Wikiversidad', '', 0, 0),
+(537, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Notification-icon-Wikivoyage-logo.svg/30px-Notification-icon-Wikivoyage-logo.svg.png', 'Wikiviajes', '', 0, 0),
+(538, 'http://es.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Notification-icon-Meta-logo.svg/30px-Notification-icon-Meta-logo.svg.png', 'Meta-Wiki', '', 0, 0),
+(539, 'http://es.wikipedia.org/', 'http://es.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(540, 'http://es.wikipedia.org/', 'http://es.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(541, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/HSutvald2.svg/38px-HSutvald2.svg.png', 'ç§€é€¸ãªè¨˜äº‹ã‚’èª­ã‚€', '', 0, 0),
+(542, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Narita_Brian_19960309R1.jpg/150px-Narita_Brian_19960309R1.jpg', '1996å¹´3æœˆ9æ—¥ é˜ªç¥žç«¶é¦¬å ´ï¼ˆé˜ªç¥žå¤§è³žå…¸ï¼‰', '', 0, 0),
+(543, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/HSVissteduatt.svg/38px-HSVissteduatt.svg.png', 'æ–°ã—ã„è¨˜äº‹ã‚’æŽ¢ã™', '', 0, 0),
+(544, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HSBild.svg/38px-HSBild.svg.png', 'æ–°ã—ã„ç”»åƒã‚’æŽ¢ã™', '', 0, 0),
+(545, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ishihara-Sangyo-hq_Osaka_Japan01-r.jpg/120px-Ishihara-Sangyo-hq_Osaka_Japan01-r.jpg', 'çŸ³åŽŸç”£æ¥­æœ¬ç¤¾ãƒ»ã‚¤ã‚·ãƒãƒ©ãƒ›ãƒ¼ãƒ«ï¼ˆå¤§é˜ªå¸‚è¥¿åŒºï¼‰', '', 0, 0),
+(546, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Myououin_0%C3%B8.jpg/180px-Myououin_0%C3%B8.jpg', 'æ˜ŽçŽ‹é™¢ å‚˜å®ˆè¦³éŸ³ï¼ˆå¾³å³¶çœŒå‰é‡Žå·å¸‚ï¼‰ã€è¥¿å›½ä¸‰åä¸‰éœŠæ‰€ã®å†™ã—', '', 0, 0),
+(547, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/13/HS_VdQ.svg/38px-HS_VdQ.svg.png', 'å¼·åŒ–è¨˜äº‹ã‚’èª­ã‚€', '', 0, 0),
+(548, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/HSPolitic.svg/38px-HSPolitic.svg.png', 'ç§€é€¸ãªç”»åƒã‚’é–²è¦§ã™ã‚‹', '', 0, 0),
+(549, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hoverflies_mating_midair.jpg/300px-Hoverflies_mating_midair.jpg', 'ç©ºä¸­ã§äº¤å°¾ä¸­ã®ãƒãƒŠã‚¢ãƒ– (Simosyrphus grandicornis)ã€ã‚ªãƒ¼ã‚¹ãƒˆãƒ©ãƒªã‚¢ã®ã‚¹ã‚¦ã‚£ãƒ•ãƒ„ãƒ»ã‚¯ãƒªãƒ¼ã‚¯ã«ã¦', '', 0, 0),
+(550, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/HSDagensdatum.svg/38px-HSDagensdatum.svg.png', 'ãã‚‡ã†ã¯ä½•ã®æ—¥ï¼Ÿã®è©±é¡Œ', '', 0, 0),
+(551, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/PL_Wiki_Aktualnosci_ikona.svg/38px-PL_Wiki_Aktualnosci_ikona.svg.png', 'å­£ç¯€ã®è©±é¡Œã«ã¤ã„ã¦', '', 0, 0),
+(552, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sakura-mochi_001.jpg/160px-Sakura-mochi_001.jpg', 'é“æ˜Žå¯ºæ¡œé¤…', '', 0, 0),
+(553, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Sakura-mochi_003.jpg/160px-Sakura-mochi_003.jpg', 'é•·å‘½å¯ºæ¡œé¤…', '', 0, 0),
+(554, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/HSSamarbete.svg/38px-HSSamarbete.svg.png', 'ã‚¦ã‚£ã‚­ãƒšãƒ‡ã‚£ã‚¢å†…ã®ãƒãƒ¼ã‚¿ãƒ«ã‚µã‚¤ãƒˆãƒ»ã‚¦ã‚£ã‚­ãƒãƒ¼ã‚¿ãƒ«ã«ã¤ã„ã¦', '', 0, 0),
+(555, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/W-circle.svg/38px-W-circle.svg.png', 'ã‚‚ãã˜', '', 0, 0),
+(556, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/HSWPedia.svg/38px-HSWPedia.svg.png', 'ã‚¦ã‚£ã‚­ãƒšãƒ‡ã‚£ã‚¢ã¨ã‚¦ã‚£ã‚­ãƒ¡ãƒ‡ã‚£ã‚¢ãƒ»ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«ã¤ã„ã¦', '', 0, 0),
+(557, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/28px-Wikimedia_Community_Logo.svg.png', 'ãƒ¡ã‚¿ã‚¦ã‚£ã‚­', '', 0, 0),
+(558, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/26px-Commons-logo.svg.png', 'ã‚³ãƒ¢ãƒ³ã‚º', '', 0, 0),
+(559, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wiktionary-logo.svg/30px-Wiktionary-logo.svg.png', 'ã‚¦ã‚£ã‚¯ã‚·ãƒ§ãƒŠãƒªãƒ¼', '', 0, 0),
+(560, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/28px-Wikibooks-logo.svg.png', 'ã‚¦ã‚£ã‚­ãƒ–ãƒƒã‚¯ã‚¹', '', 0, 0),
+(561, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/26px-Wikiquote-logo.svg.png', 'ã‚¦ã‚£ã‚­ã‚¯ã‚©ãƒ¼ãƒˆ', '', 0, 0),
+(562, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/26px-Wikisource-logo.svg.png', 'ã‚¦ã‚£ã‚­ã‚½ãƒ¼ã‚¹', '', 0, 0),
+(563, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/28px-Wikispecies-logo.svg.png', 'ã‚¦ã‚£ã‚­ã‚¹ãƒ”ãƒ¼ã‚·ãƒ¼ã‚º', '', 0, 0),
+(564, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/28px-Wikinews-logo.svg.png', 'ã‚¦ã‚£ã‚­ãƒ‹ãƒ¥ãƒ¼ã‚¹', '', 0, 0),
+(565, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/28px-Wikiversity-logo.svg.png', 'ã‚¦ã‚£ã‚­ãƒãƒ¼ã‚·ãƒ†ã‚£', '', 0, 0),
+(566, 'http://ja.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/28px-Wikidata-logo.svg.png', 'ã‚¦ã‚£ã‚­ãƒ‡ãƒ¼ã‚¿', '', 0, 0),
+(567, 'http://ja.wikipedia.org/', 'http://ja.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(568, 'http://ja.wikipedia.org/', 'http://ja.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(569, 'http://de.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Osmose_zelle.jpg/132px-Osmose_zelle.jpg', 'Osmose bei einer gefÃ¤rbten Zelle.', '', 0, 0),
+(570, 'http://de.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Charlie_Chaplin_by_Charles_C._Zoller_4.jpg/108px-Charlie_Chaplin_by_Charles_C._Zoller_4.jpg', 'Charlie Chaplin (ca. 1917/18)', '', 0, 0),
+(571, 'http://de.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Incendie_Notre_Dame_de_Paris.jpg/86px-Incendie_Notre_Dame_de_Paris.jpg', 'Die brennende Kathedrale Notre-Dame in Paris', '', 0, 0),
+(572, 'http://de.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Gymnasium_Marienwerder_cropped.jpg/94px-Gymnasium_Marienwerder_cropped.jpg', 'Gymnasium Marienwerder in den 1920er Jahren', '', 0, 0),
+(573, 'http://de.wikipedia.org/', 'http://de.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(574, 'http://de.wikipedia.org/', 'http://de.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(575, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Incendie_Notre_Dame_de_Paris.jpg/100px-Incendie_Notre_Dame_de_Paris.jpg', 'Incendie de Notre-Dame de Paris', '', 0, 0),
+(576, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Old_Man_of_the_Lake_-_Crater_Lake_National_Park_-_NPS_2.jpg/85px-Old_Man_of_the_Lake_-_Crater_Lake_National_Park_-_NPS_2.jpg', 'Old Man of the Lake en 2013.', '', 0, 0),
+(577, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2017.05.13.-04-Bruehl_Rohrhof--Gemeiner_Schwefelporling.jpg/202px-2017.05.13.-04-Bruehl_Rohrhof--Gemeiner_Schwefelporling.jpg', 'Sporophores de polypore soufrÃ©. (dÃ©finition rÃ©elle 2Â 306Â Ã—Â 2Â 925)', '', 0, 0),
+(578, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/9/9d/Commons-logo-31px.png', 'Commons', '', 0, 0),
+(579, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/32px-Wikiquote-logo.svg.png', 'Wikiquote', '', 0, 0),
+(580, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/40px-Wikidata-logo.svg.png', 'Wikidata', '', 0, 0),
+(581, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wiktionary-logo.svg/32px-Wiktionary-logo.svg.png', 'Wiktionnaire', '', 0, 0),
+(582, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/32px-Wikibooks-logo.svg.png', 'Wikilivres', '', 0, 0),
+(583, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/32px-Wikisource-logo.svg.png', 'Wikisource', '', 0, 0),
+(584, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/32px-Wikiversity-logo.svg.png', 'WikiversitÃ©', '', 0, 0),
+(585, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wikinews-logo-51px.png/40px-Wikinews-logo-51px.png', 'Wikinews', '', 0, 0);
+INSERT INTO `imges` (`id`, `siteUrl`, `imageUrl`, `alt`, `title`, `clicks`, `broken`) VALUES
+(586, 'http://fr.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/32px-Wikispecies-logo.svg.png', 'Wikispecies', '', 0, 0),
+(587, 'http://fr.wikipedia.org/', 'http://fr.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(588, 'http://fr.wikipedia.org/', 'http://fr.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(589, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Crystal_Clear_app_xmag.svg/15px-Crystal_Clear_app_xmag.svg.png', 'Clicca qui per sfogliare l\'indice delle voci!', '', 0, 0),
+(590, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/1rightarrow.png/15px-1rightarrow.png', '1rightarrow.png', '', 0, 0),
+(591, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Nuvola_apps_bookcase_simplified.svg/15px-Nuvola_apps_bookcase_simplified.svg.png', 'Clicca qui per navigare tra i portali tematici!', '', 0, 0),
+(592, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/HSUtvald.svg/38px-HSUtvald.svg.png', 'Vetrina', '', 0, 0),
+(593, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/RA_350_bis.jpg/150px-RA_350_bis.jpg', 'RA 350 bis.jpg', '', 0, 0),
+(594, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Le_vent_se_l%C3%A8ve_logo.png/150px-Le_vent_se_l%C3%A8ve_logo.png', 'Le vent se lÃ¨ve logo.png', '', 0, 0),
+(595, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/PL_Wiki_CzyWiesz_ikona.svg/38px-PL_Wiki_CzyWiesz_ikona.svg.png', 'Lo sapevi che...', '', 0, 0),
+(596, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Mallon-Mary_01.jpg/150px-Mallon-Mary_01.jpg', 'Mallon-Mary 01.jpg', '', 0, 0),
+(597, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Benedykt_xvi-crop.jpg/100px-Benedykt_xvi-crop.jpg', 'Benedykt xvi-crop.jpg', '', 0, 0),
+(598, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/HS_geo.svg/38px-HS_geo.svg.png', 'Nelle altre lingue', '', 0, 0),
+(599, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Wikimedia-logo-circle.svg/38px-Wikimedia-logo-circle.svg.png', 'Oltre Wikipedia', '', 0, 0),
+(600, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png', 'Commons-logo.svg', '', 0, 0),
+(601, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/30px-Wikiquote-logo.svg.png', 'Wikiquote-logo.svg', '', 0, 0),
+(602, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/30px-Wikinews-logo.svg.png', 'Wikinews-logo.svg', '', 0, 0),
+(603, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/30px-Wikispecies-logo.svg.png', 'Wikispecies-logo.svg', '', 0, 0),
+(604, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/30px-Wikimedia_Community_Logo.svg.png', 'Wikimedia Community Logo.svg', '', 0, 0),
+(605, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/30px-Wikibooks-logo.svg.png', 'Wikibooks-logo.svg', '', 0, 0),
+(606, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/30px-Wikisource-logo.svg.png', 'Wikisource-logo.svg', '', 0, 0),
+(607, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/30px-Wikiversity-logo.svg.png', 'Wikiversity-logo.svg', '', 0, 0),
+(608, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/32px-Wikidata-logo.svg.png', 'Wikidata-logo.svg', '', 0, 0),
+(609, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/30px-Wikivoyage-Logo-v3-icon.svg.png', 'Wikivoyage-Logo-v3-icon.svg', '', 0, 0),
+(610, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/HSTools.svg/38px-HSTools.svg.png', 'Cosa posso fare?', '', 0, 0),
+(611, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Text-x-generic_with_pencil-2.svg/38px-Text-x-generic_with_pencil-2.svg.png', 'Chi fa Wikipedia?', '', 0, 0),
+(612, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/HSContribs.svg/38px-HSContribs.svg.png', 'Lavori in corso', '', 0, 0),
+(613, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Emblem-qual.svg/18px-Emblem-qual.svg.png', 'Emblem-qual.svg', '', 0, 0),
+(614, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/07/HSWikimedia.svg/38px-HSWikimedia.svg.png', 'Dagli altri progetti', '', 0, 0),
+(615, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Wikimedia-logo-meta.svg/18px-Wikimedia-logo-meta.svg.png', 'Wikimedia-logo-meta.svg', '', 0, 0),
+(616, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/18px-Wikiquote-logo.svg.png', 'Wikiquote-logo.svg', '', 0, 0),
+(617, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png', 'Commons-logo.svg', '', 0, 0),
+(618, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/20180929_UCI_Road_World_Championships_Innsbruck_Women_Elite_Road_Race_Charlotte_Becker_850_7872.jpg/260px-20180929_UCI_Road_World_Championships_Innsbruck_Women_Elite_Road_Race_Charlotte_Becker_850_7872.jpg', '20180929 UCI Road World Championships Innsbruck Women Elite Road Race Charlotte Becker 850 7872.jpg', '', 0, 0),
+(619, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/25px-Wikinews-logo.svg.png', 'Wikinews-logo.svg', '', 0, 0),
+(620, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/19px-Wikisource-logo.svg.png', 'Wikisource-logo.svg', '', 0, 0),
+(621, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Salgari_-_Il_Re_dell%27Aria.djvu/page1-190px-Salgari_-_Il_Re_dell%27Aria.djvu.jpg', 'Salgari - Il Re dell\'Aria.djvu', '', 0, 0),
+(622, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/19px-Wikivoyage-Logo-v3-icon.svg.png', 'Wikivoyage-Logo-v3-icon.svg', '', 0, 0),
+(623, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/AntiguaGuatemalaBanner4.jpg/260px-AntiguaGuatemalaBanner4.jpg', 'AntiguaGuatemalaBanner4.jpg', '', 0, 0),
+(624, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wikiversity-logo-it.svg/19px-Wikiversity-logo-it.svg.png', 'Wikiversity-logo-it.svg', '', 0, 0),
+(625, 'http://it.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wikiversity-logo-it.svg/40px-Wikiversity-logo-it.svg.png', 'Wikiversity-logo-it.svg', '', 0, 0),
+(626, 'http://it.wikipedia.org/', 'http://it.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(627, 'http://it.wikipedia.org/', 'http://it.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(628, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/1995_Pacific_hurricane_season_map.png/190px-1995_Pacific_hurricane_season_map.png', '1995 Pacific hurricane season map.png', '', 0, 0),
+(629, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Heilongjiang_Expressway_Network.svg/146px-Heilongjiang_Expressway_Network.svg.png', 'Heilongjiang Expressway Network.svg', '', 0, 0),
+(630, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Oncorhynchus_mykiss_vs._Salmo_salar.jpg/140px-Oncorhynchus_mykiss_vs._Salmo_salar.jpg', 'Oncorhynchus mykiss vs. Salmo salar.jpg', '', 0, 0),
+(631, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/VT_April_16_memorial_closeup.jpg/120px-VT_April_16_memorial_closeup.jpg', 'VT April 16 memorial closeup.jpg', '', 0, 0),
+(632, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Applications-office.svg/70px-Applications-office.svg.png', 'Applications-office.svg', '', 0, 0),
+(633, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Dialog-information_on.svg/70px-Dialog-information_on.svg.png', 'Dialog-information on.svg', '', 0, 0),
+(634, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/45px-Wikimedia-logo_black.svg.png', 'Wikimedia-logo black.svg', '', 0, 0),
+(635, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wiktprintable_without_text_zh.svg/37px-Wiktprintable_without_text_zh.svg.png', 'ç»´åŸºè¯å…¸', '', 0, 0),
+(636, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/40px-Wikibooks-logo.svg.png', 'ç»´åŸºæ•™ç§‘ä¹¦', '', 0, 0),
+(637, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/55px-Wikinews-logo.svg.png', 'ç»´åŸºæ–°é—»', '', 0, 0),
+(638, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/40px-Wikispecies-logo.svg.png', 'ç»´åŸºç‰©ç§', '', 0, 0),
+(639, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/40px-Wikiversity-logo.svg.png', 'ç»´åŸºå­¦é™¢', '', 0, 0),
+(640, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/35px-Commons-logo.svg.png', 'ç»´åŸºå…±äº«èµ„æº', '', 0, 0),
+(641, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/MediaWiki-notext.svg/40px-MediaWiki-notext.svg.png', 'MediaWiki', '', 0, 0),
+(642, 'http://zh.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/37px-Wikimedia_Community_Logo.svg.png', 'å…ƒç»´åŸº', '', 0, 0),
+(643, 'http://zh.wikipedia.org/', 'http://zh.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(644, 'http://zh.wikipedia.org/', 'http://zh.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(645, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Sindelar-aut.jpg/140px-Sindelar-aut.jpg', 'Sindelar durante sua passagem na SeleÃ§Ã£o da Ãustria', '', 0, 0),
+(646, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Icon_Facebook.svg/18px-Icon_Facebook.svg.png', 'Compartilhe via Facebook', '', 0, 0),
+(647, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Icon_Twitter.svg/18px-Icon_Twitter.svg.png', 'Compartilhe via Twitter', '', 0, 0),
+(648, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Icon_Google%2B.svg/18px-Icon_Google%2B.svg.png', 'Compartilhe via Google+', '', 0, 0),
+(649, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Incendie_Notre_Dame_de_Paris.jpg/150px-Incendie_Notre_Dame_de_Paris.jpg', 'Omar al-Bashir', '', 0, 0),
+(650, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Flag_of_Bosnia_and_Herzegovina.svg/150px-Flag_of_Bosnia_and_Herzegovina.svg.png', 'Flag of Bosnia and Herzegovina.svg', '', 0, 0),
+(651, 'http://pt.wikipedia.org/', 'http://pt.wikipedia.org/w/extensions/ImageMap/resources/desc-20.png?15600', 'Sobre esta imagem', '', 0, 0),
+(652, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Alexis_de_tocqueville.jpg/150px-Alexis_de_tocqueville.jpg', 'Alexis de Tocqueville', '', 0, 0),
+(653, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/20180929_UCI_Road_World_Championships_Innsbruck_Women_Elite_Road_Race_Charlotte_Becker_850_7872.jpg/303px-20180929_UCI_Road_World_Championships_Innsbruck_Women_Elite_Road_Race_Charlotte_Becker_850_7872.jpg', 'Ciclista alemÃ£ Charlotte Becker competindo no Campeonato Mundial de Ciclismo em Estrada de 2018 em Innsbruck, Ãustria. (definiÃ§Ã£o 4Â 269Â Ã—Â 2Â 846)', '', 0, 0),
+(654, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Wikipedia-logo-v2-bw.svg/90px-Wikipedia-logo-v2-bw.svg.png', 'Wikipedia-logo-v2-bw.svg', '', 0, 0),
+(655, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/27px-Commons-logo.svg.png', 'Commons', '', 0, 0),
+(656, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Incubator-logo.svg/29px-Incubator-logo.svg.png', 'Incubator', '', 0, 0),
+(657, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/36px-Wikimedia_Community_Logo.svg.png', 'Meta-Wiki', '', 0, 0),
+(658, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wiktionary-logo.svg/36px-Wiktionary-logo.svg.png', 'WikcionÃ¡rio', '', 0, 0),
+(659, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/36px-Wikidata-logo.svg.png', 'Wikidata', '', 0, 0),
+(660, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/36px-Wikibooks-logo.svg.png', 'Wikilivros', '', 0, 0),
+(661, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wikinews-logo-51px.png/36px-Wikinews-logo-51px.png', 'WikinotÃ­cias', '', 0, 0),
+(662, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/34px-Wikisource-logo.svg.png', 'Wikisource', '', 0, 0),
+(663, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/31px-Wikispecies-logo.svg.png', 'Wikispecies', '', 0, 0),
+(664, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/36px-Wikiversity-logo.svg.png', 'Wikiversidade', '', 0, 0),
+(665, 'http://pt.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/36px-Wikivoyage-Logo-v3-icon.svg.png', 'Wikivoyage', '', 0, 0),
+(666, 'http://pt.wikipedia.org/', 'http://pt.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(667, 'http://pt.wikipedia.org/', 'http://pt.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0),
+(668, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Lacul_Amara.JPG/100px-Lacul_Amara.JPG', 'Lacul Amara.JPG', '', 0, 0),
+(669, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Yvette_Williams_1954b.jpg/100px-Yvette_Williams_1954b.jpg', 'Yvette Williams', '', 0, 0),
+(670, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/George_Washington_-_by_Gilbert_Stuart_-_c._1821_-_National_Gallery_of_Art%2C_Washington_DC.jpg/100px-George_Washington_-_by_Gilbert_Stuart_-_c._1821_-_National_Gallery_of_Art%2C_Washington_DC.jpg', 'George Washington', '', 0, 0),
+(671, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chaplin_The_Kid.jpg/100px-Chaplin_The_Kid.jpg', 'Charlie Chaplin', '', 0, 0),
+(672, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kamui_Kobayashi_2009_Japan_1st_Free_Practice.jpg/100px-Kamui_Kobayashi_2009_Japan_1st_Free_Practice.jpg', 'Kamui Kobayashi 2009 Japan 1st Free Practice.jpg', '', 0, 0),
+(673, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Oasis_Noel_and_Liam_WF.jpg/100px-Oasis_Noel_and_Liam_WF.jpg', 'Oasis Noel and Liam WF.jpg', '', 0, 0),
+(674, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rozeta_Pary%C5%BC_notre-dame_chalger.jpg/400px-Rozeta_Pary%C5%BC_notre-dame_chalger.jpg', 'Rozeta ParyÅ¼ notre-dame chalger.jpg', '', 0, 0),
+(675, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/WiktionaryPl_nodesc.svg/35px-WiktionaryPl_nodesc.svg.png', 'WikisÅ‚ownik', '', 0, 0),
+(676, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/45px-Wikinews-logo.svg.png', 'Wikinews', '', 0, 0),
+(677, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/45px-Wikidata-logo.svg.png', 'Wikidane', '', 0, 0),
+(678, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/55px-Wikimedia-logo.svg.png', 'Wikimedia Foundation', '', 0, 0),
+(679, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Wikimedia_Polska_logo.svg/50px-Wikimedia_Polska_logo.svg.png', 'Wikimedia Polska', '', 0, 0),
+(680, 'http://pl.wikipedia.org/', 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/55px-Wikimedia_Community_Logo.svg.png', 'Meta-wiki', '', 0, 0),
+(681, 'http://pl.wikipedia.org/', 'http://pl.wikipedia.org/static/images/wikimedia-button.png', 'Wikimedia Foundation', '', 0, 0),
+(682, 'http://pl.wikipedia.org/', 'http://pl.wikipedia.org/static/images/poweredby_mediawiki_88x31.png', 'Powered by MediaWiki', '', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sites`
+--
+
+CREATE TABLE `sites` (
+  `id` int(11) NOT NULL,
+  `url` varchar(512) NOT NULL,
+  `title` varchar(512) NOT NULL,
+  `description` varchar(512) NOT NULL,
+  `keywords` varchar(512) NOT NULL,
+  `clicks` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sites`
+--
+
+INSERT INTO `sites` (`id`, `url`, `title`, `description`, `keywords`, `clicks`) VALUES
+(103, 'https://www.bbc.co.uk', 'BBC - Home', 'The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole of BBC Online', 'BBC, British Broadcasting Corporation, BBCi, News, Sport, iPlayer, TV, Radio, Food, Music, Business, Arts, Bitesize, Lifestyle, Entertainment, Headlines', 0),
+(104, 'http://www.bbc.com/accessibility/', 'BBC - My Web My Way - Home', 'My Web My Way explains the many ways you can change your browser, computer, keyboard and mouse settings to make the web more accessible to you', 'BBC, Accessibility, disability, browser, computer, keyboard, mouse, Windows, Mac, Linux, BBC online', 0),
+(105, 'http://www.samsung.com/in/info/privacy/', 'Privacy | Samsung India', 'Samsung Privacy', 'samsung, samsung.com, samsung electronics, samsung website, privacy.', 0),
+(106, 'http://www.samsung.com/in/', 'Samsung India | Mobile | TV | Home Appliances', 'Samsung helps you discover a wide range of home electronics with cutting-edge technology including smartphones, tablets, TVs, home appliances and more.', 'Samsung, Samsung Electronics, Samsung Smartphones, Samsung TVs, Samsung Home Appliances', 0),
+(107, 'http://www.samsung.com/in/web/search-orders/', 'Samsung India', '', '', 0),
+(108, 'http://www.samsung.com/in/web/my-orders/', 'Samsung India', '', '', 0),
+(109, 'http://www.samsung.com/in/web/cart/', 'Samsung India', '', '', 0),
+(110, 'http://www.samsung.com/in/info/privacy.html', 'Privacy | Samsung India', 'Samsung Privacy', 'samsung, samsung.com, samsung electronics, samsung website, privacy.', 0),
+(111, 'http://www.samsung.com/in/smartphones/galaxy-s10/', 'Samsung Galaxy S10e, S10 & S10+ - Price, Specs & Features | Samsung India', 'Meet the next generation Galaxy S10e, S10 & S10+. With a cinematic Infinity Display, Ultrasonic Fingerprint, Pro-grade Camera, and intelligent performance. Here\'s everything you need to know on price, offers and where to buy.', 'Samsung smartphone, Galaxy S10, Galaxy S10+, Galaxy S10e, Samsung Galaxy S10 features, galaxy S10 plus features, galaxy S10e features, Samsung Galaxy S10 S10+, S10e performance, Samsung Galaxy S10 S10plus S10e camera, Samsung Galaxy S10 S10plus S10e intelligence, Samsung Galaxy S10 accessories, galaxy S10 plus accessories, Galaxy S10e accessories', 0),
+(112, 'http://www.samsung.com/in/smartphones/galaxy-s10/buy/', 'Buy Samsung Galaxy S10e, S10 & S10+ Online | Samsung India', 'Buy new launch Samsung Galaxy S10e, Galaxy S10 & Galaxy S10+ mobile with cinematic Infinity Display, Ultrasonic Fingerprint, Pro-grade Camera, and intelligent performance. Order Samsung new launch flagship mobiles from Samsung India Online.', 'buy samsung smartphone, buy galaxy s10, buy galaxy s10+, buy galaxy S10e, buy samsung galaxy s10 price, buy samsung galaxy s10+ price, buy samsung galaxy s10e price, buy samsung s10 online in india', 0),
+(113, 'http://www.samsung.com/in/microsite/galaxy-m/sale/', 'Samsung Galaxy M Series Sale | IMPOWERD | Samsung India', 'Wait is Over!! Samsung Galaxy M Series Sale starting from 5th Feb at 12PM. Bookmark the date for your M Series Phones, M10 (16GB & 32GB) & M120 (32GB & 64GB) with Ultra Wide Multi Camera, Infinity V Display and much more. HURRY UP!!', 'm10 sale, samsung m10, galaxy m10, samsung galaxy m10, samsung 10 sale, galaxy m10 sale, samsung m10 sale online, m20 sale, samsung m20, galaxy m20, samsung galaxy m20, samsung m20 sale, galaxy m20 sale, samsung m20 sale online', 0),
+(114, 'http://www.samsung.com/in/microsite/galaxya/', 'Samsung Galaxy A Series - Features and Specs | Samsung India', 'Samsung Galaxy A Series mobiles with features as Ultra-Wide Video, Slow-mo, Hyperlase, Infinity Display, Fast Charging. Know more features, specs, prices of Galaxy A Series mobile phones.', 'samsung a series, samsung a series phones, galaxy a series, galaxy a series phones, samsung galaxy a series, samsung galaxy smartphones, samsung galaxy phones, samsung galaxy a series phones, galaxy a series features, galaxy a series specification', 0),
+(115, 'http://www.samsung.com/in/microsite/galaxya/buy/', 'Buy Samsung Galaxy A Series Mobiles Online | Samsung India', 'Buy latest Samsung Galaxy Action Series mobiles online from Samsung India. Know more about features, specs, prices of Galaxy A Series mobile phones.', 'buy samsung a series, buy samsung a series phones, buy galaxy a series, buy galaxy a series phones, buy samsung galaxy a series, buy samsung galaxy a series phones, galaxy a series features, galaxy a series specification, buy samsung action series phones', 0),
+(116, 'https://www.secureserver.net?pl_id=329330', 'Daily Hunt Domains', '', '', 0),
+(117, 'https://www.secureserver.net/set-preference?pl_id=329330&market=es-AR', 'Daily Hunt Domains', '', '', 0),
+(118, 'http://www.quora.com/', 'Quora - A place to share knowledge and better understand the world', 'Quora is a place to gain and share knowledge. It&#039;s a platform to ask questions and connect with people who contribute unique insights and quality answers. This empowers people to learn from each other and to better understand the world.', '', 0),
+(119, 'http://www.quora.com/about/tos', 'Terms of Service - Quora', '', '', 0),
+(120, 'http://www.quora.com/about/privacy', 'Privacy Policy - Quora', '', '', 0),
+(121, 'https://nl.quora.com', 'Quora - Een plek om kennis te delen en de wereld beter te begrijpen', 'Quora is een plek om je kennis uit te diepen en delen. Het is een platform om vragen te stellen en je aan te sluiten bij mensen die unieke inzichten en zinvolle antwoorden bieden. Op deze manier leren mensen van elkaar en helpen ze elkaar om de we...', '', 0),
+(122, 'https://da.quora.com', 'Quora - Et sted at dele viden og bedre forstÃƒÂ¥ verden', 'Quora er et sted at fÃƒÂ¥ og dele viden. Det er en platform til at stille spÃƒÂ¸rgsmÃƒÂ¥l og knytte personer sammen, der bidrager med unikke indsigter og kvalitets svar. Dette gÃƒÂ¸r det muligt for folk at lÃƒÂ¦re af hinanden og bedre forstÃƒÂ¥ verden.', '', 0),
+(123, 'https://fi.quora.com', 'Quora - Paikka, jossa voi jakaa tietoa ja paremmin ymmÃƒÂ¤rtÃƒÂ¤ÃƒÂ¤ maailmaa', 'Quora on alusta, jossa voi saada ja jakaa tietoa. Quorassa voi kysyÃƒÂ¤ kysymyksiÃƒÂ¤ ja olla yhteydessÃƒÂ¤ ihmisiin, jotka tarjoavat ainutlaatuisia nÃƒÂ¤kemyksiÃƒÂ¤ ja laadukkaita vastauksia. TÃƒÂ¤mÃƒÂ¤ antaa ihmisille mahdollisuuden oppia toisiltaan ja ymmÃƒÂ¤rtÃƒÂ¤mÃƒÂ¤ÃƒÂ¤n m...', '', 0),
+(124, 'https://no.quora.com', 'Quora - Et sted ÃƒÂ¥ dele kunnskap og fÃƒÂ¥ en bedre forstÃƒÂ¥else av verden', 'Quora er et sted ÃƒÂ¥ fÃƒÂ¥ og dele kunnskap. Det er en plattform for ÃƒÂ¥ stille spÃƒÂ¸rsmÃƒÂ¥l og knytte sammen folk som bidrar med unike innsikter og fÃƒÂ¸rsteklasses svar. Dette gjÃƒÂ¸r det mulig for folk ÃƒÂ¥ lÃƒÂ¦re av hverandre og bedre forstÃƒÂ¥ verden.', '', 0),
+(125, 'https://sv.quora.com', 'Quora - En plats att dela kunskap och bÃƒÂ¤ttre fÃƒÂ¶rstÃƒÂ¥ vÃƒÂ¤rlden', 'Quora ÃƒÂ¤r en plats att fÃƒÂ¥ och dela kunskap. Det ÃƒÂ¤r en plattform fÃƒÂ¶r att stÃƒÂ¤lla frÃƒÂ¥gor och knyta samman personer som bidrar med unika insikter och fÃƒÂ¶rstklassiga svar. Detta gÃƒÂ¶r det mÃƒÂ¶jligt fÃƒÂ¶r personer att lÃƒÂ¤ra av varandra och bÃƒÂ¤ttre fÃƒÂ¶rstÃƒÂ¥ vÃƒÂ¤rlden.', '', 0),
+(126, 'https://mr.quora.com', 'Quora - Ã Â¤ÂœÃ Â¥ÂÃ Â¤ÂžÃ Â¤Â¾Ã Â¤Â¨ Ã Â¤Â¶Ã Â¥Â‡Ã Â¤Â…Ã Â¤Â° Ã Â¤Â•Ã Â¤Â°Ã Â¤Â£Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¸Ã Â¤Â¾Ã Â¤Â Ã Â¥Â€ Ã Â¤Â†Ã Â¤Â£Ã Â¤Â¿ Ã Â¤ÂœÃ Â¤Â—Ã Â¤Â¾Ã Â¤Â²Ã Â¤Â¾ Ã Â¤Â…Ã Â¤Â§Ã Â¤Â¿Ã Â¤Â• Ã Â¤ÂšÃ Â¤Â¾Ã Â¤Â‚Ã Â¤Â—Ã Â¤Â²Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾ Ã Â¤ÂªÃ Â¥ÂÃ Â¤Â°Ã Â¤Â•Ã Â¤Â¾Ã Â¤Â°Ã Â¥Â‡ Ã Â¤Â¸Ã Â¤Â®Ã Â¤ÂœÃ Â¥Â‚Ã Â¤Â¨ Ã Â¤Â˜Ã Â¥Â‡Ã Â¤Â£Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¸Ã Â¤Â¾Ã Â¤Â Ã Â¥Â€Ã Â¤ÂšÃ Â¥Â‡ Ã Â¤ÂµÃ Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¸Ã Â¤ÂªÃ Â¥Â€Ã Â¤Â ', 'Quora Ã Â¤Â¹Ã Â¥Â‡ Ã Â¤ÂœÃ Â¥ÂÃ Â¤ÂžÃ Â¤Â¾Ã Â¤Â¨ Ã Â¤Â®Ã Â¤Â¿Ã Â¤Â³Ã Â¤ÂµÃ Â¤Â£Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤ÂšÃ Â¥Â‡ Ã Â¤Â†Ã Â¤Â£Ã Â¤Â¿ Ã Â¤Â¤Ã Â¥Â‡ Ã Â¤Â¶Ã Â¥Â‡Ã Â¤Â…Ã Â¤Â° Ã Â¤Â•Ã Â¤Â°Ã Â¤Â£Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¸Ã Â¤Â¾Ã Â¤Â Ã Â¥Â€Ã Â¤ÂšÃ Â¥Â‡ Ã Â¤ÂÃ Â¤Â• Ã Â¤ÂµÃ Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤Â¸Ã Â¤ÂªÃ Â¥Â€Ã Â¤Â  Ã Â¤Â†Ã Â¤Â¹Ã Â¥Â‡. Ã Â¤Â¹Ã Â¥Â‡ Ã Â¤ÂªÃ Â¥ÂÃ Â¤Â°Ã Â¤Â¶Ã Â¥ÂÃ Â¤Â¨ Ã Â¤ÂµÃ Â¤Â¿Ã Â¤ÂšÃ Â¤Â¾Ã Â¤Â°Ã Â¤Â£Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾Ã Â¤ÂšÃ Â¥Â‡ Ã Â¤Âµ Ã Â¤ÂÃ Â¤Â–Ã Â¤Â¾Ã Â¤Â¦Ã Â¥ÂÃ Â¤Â¯Ã Â¤Â¾ Ã Â¤ÂªÃ Â¥ÂÃ Â¤Â°Ã Â¤', '', 0),
+(127, 'https://bn.quora.com', 'Quora - Ã Â¦ÂœÃ Â§ÂÃ Â¦ÂžÃ Â¦Â¾Ã Â¦Â¨ Ã Â¦Â­Ã Â¦Â¾Ã Â¦Â— Ã Â¦Â•Ã Â¦Â°Ã Â§Â‡ Ã Â¦Â¨Ã Â§Â‡Ã Â¦Â“Ã Â§ÂŸÃ Â¦Â¾ Ã Â¦Â“ Ã Â¦Â¬Ã Â¦Â¿Ã Â¦Â¶Ã Â§ÂÃ Â¦Â¬Ã Â¦Â•Ã Â§Â‡ Ã Â¦Â†Ã Â¦Â°Ã Â¦Â“ Ã Â¦Â­Ã Â¦Â¾Ã Â¦Â²Ã Â§Â‹Ã Â¦Â­Ã Â¦Â¾Ã Â¦Â¬Ã Â§Â‡ Ã Â¦ÂœÃ Â¦Â¾Ã Â¦Â¨Ã Â¦Â¾Ã Â¦Â° Ã Â¦ÂœÃ Â¦Â¨Ã Â§ÂÃ Â¦Â¯ Ã Â¦ÂÃ Â¦Â•Ã Â¦ÂŸÃ Â¦Â¿ Ã Â¦ÂœÃ Â¦Â¾Ã Â§ÂŸÃ Â¦Â—Ã Â¦Â¾', 'Quora Ã Â¦Â¹Ã Â¦Â² Ã Â¦ÂœÃ Â§ÂÃ Â¦ÂžÃ Â¦Â¾Ã Â¦Â¨ Ã Â¦Â†Ã Â¦Â¹Ã Â¦Â°Ã Â¦Â£ Ã Â¦Â“ Ã Â¦Â¶Ã Â§Â‡Ã Â§ÂŸÃ Â¦Â¾Ã Â¦Â° Ã Â¦Â•Ã Â¦Â°Ã Â¦Â¾Ã Â¦Â° Ã Â¦Â¸Ã Â§ÂÃ Â¦Â¥Ã Â¦Â¾Ã Â¦Â¨Ã Â¥Â¤  Ã Â¦ÂÃ Â¦ÂŸÃ Â¦Â¿ Ã Â¦ÂÃ Â¦Â•Ã Â¦ÂŸÃ Â¦Â¿ Ã Â¦ÂªÃ Â§ÂÃ Â¦Â²Ã Â§ÂÃ Â¦Â¯Ã Â¦Â¾Ã Â¦ÂŸÃ Â¦Â«Ã Â¦Â°Ã Â§ÂÃ Â¦Â® Ã Â¦Â¯Ã Â¦Â¾Ã Â¦Â¤Ã Â§Â‡ Ã Â¦ÂªÃ Â§ÂÃ Â¦Â°Ã Â¦Â¶Ã Â§ÂÃ Â¦Â¨ Ã Â¦ÂœÃ Â¦Â¿Ã Â¦ÂœÃ Â§ÂÃ Â¦ÂžÃ Â¦Â¾Ã Â¦Â¸Ã Â¦Â¾ Ã Â¦Â•Ã Â¦Â°Ã Â¦Â¾ Ã Â¦Â¯Ã Â¦Â¾Ã Â§ÂŸ Ã Â¦ÂÃ Â¦Â¬Ã Â¦Â‚ Ã Â¦Â¸Ã Â§Â‡Ã Â¦Â‡Ã Â¦Â¸Ã Â¦Â¬ Ã Â¦Â®Ã Â¦Â¾Ã Â¦Â¨Ã Â§ÂÃ ', '', 0),
+(128, 'https://ta.quora.com', 'Quora - Ã Â®Â…Ã Â®Â±Ã Â®Â¿Ã Â®ÂµÃ Â¯ÂˆÃ Â®ÂªÃ Â¯Â Ã Â®ÂªÃ Â®Â•Ã Â®Â¿Ã Â®Â°Ã Â¯ÂÃ Â®ÂµÃ Â®Â¤Ã Â®Â±Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â¯Â Ã Â®Â‰Ã Â®Â²Ã Â®Â•Ã Â¯Âˆ Ã Â®Â¨Ã Â®Â©Ã Â¯ÂÃ Â®Â•Ã Â¯Â Ã Â®Â…Ã Â®Â±Ã Â®Â¿Ã Â®ÂµÃ Â®Â¤Ã Â®Â±Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â®Â¾Ã Â®Â© Ã Â®Â‰Ã Â®Â°Ã Â®Â¿Ã Â®Â¯ Ã Â®Â“Ã Â®Â°Ã Â¯Â Ã Â®Â‰Ã Â®Â¯Ã Â®Â°Ã Â®Â¿Ã Â®Â¯ Ã Â®Â‡Ã Â®ÂŸÃ Â®Â®Ã Â¯Â', 'Quora, Ã Â®Â…Ã Â®Â±Ã Â®Â¿Ã Â®ÂµÃ Â¯ÂˆÃ Â®ÂªÃ Â¯Â Ã Â®ÂªÃ Â¯Â†Ã Â®Â°Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®ÂµÃ Â®Â¤Ã Â®Â±Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â¯Â Ã Â®ÂªÃ Â®Â•Ã Â®Â¿Ã Â®Â°Ã Â¯ÂÃ Â®ÂµÃ Â®Â¤Ã Â®Â±Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â®Â¾Ã Â®Â© Ã Â®Â“Ã Â®Â°Ã Â¯Â Ã Â®Â‰Ã Â®Â¯Ã Â®Â°Ã Â®Â¿Ã Â®Â¯ Ã Â®Â‡Ã Â®ÂŸÃ Â®Â®Ã Â¯Â Ã Â®Â†Ã Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â¯Â. Ã Â®Â‡Ã Â®Â¤Ã Â¯Â, Ã Â®Â•Ã Â¯Â‡Ã Â®Â³Ã Â¯ÂÃ Â®ÂµÃ Â®Â¿Ã Â®Â•Ã Â®Â³Ã Â¯ÂˆÃ Â®Â•Ã Â¯Â Ã Â®Â•Ã Â¯Â‡Ã Â®ÂŸÃ Â¯ÂÃ Â®ÂªÃ Â®Â¤Ã Â®Â±Ã Â¯ÂÃ Â®Â•Ã Â¯ÂÃ Â®Â®Ã Â¯Â, Ã Â®Â¤Ã Â®Â°', '', 0),
+(129, 'http://en.wikipedia.org/', 'Wikipedia, the free encyclopedia', '', '', 0),
+(130, 'http://es.wikipedia.org/', 'Wikipedia, la enciclopedia libre', '', '', 0),
+(131, 'http://ja.wikipedia.org/', 'Wikipedia', '', '', 0),
+(132, 'http://de.wikipedia.org/', 'Wikipedia â€“ Die freie EnzyklopÃ¤die', '', '', 0),
+(133, 'http://fr.wikipedia.org/', 'WikipÃ©dia, l\'encyclopÃ©die libre', '', '', 0),
+(134, 'http://it.wikipedia.org/', 'Wikipedia, l\'enciclopedia libera', '', '', 0),
+(135, 'http://zh.wikipedia.org/', 'ç»´åŸºç™¾ç§‘ï¼Œè‡ªç”±çš„ç™¾ç§‘å…¨ä¹¦', '', '', 0),
+(136, 'http://pt.wikipedia.org/', 'WikipÃ©dia, a enciclopÃ©dia livre', '', '', 0),
+(137, 'http://pl.wikipedia.org/', 'Wikipedia, wolna encyklopedia', '', '', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `imges`
+--
+ALTER TABLE `imges`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sites`
+--
+ALTER TABLE `sites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `imges`
+--
+ALTER TABLE `imges`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=683;
+
+--
+-- AUTO_INCREMENT for table `sites`
+--
+ALTER TABLE `sites`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
