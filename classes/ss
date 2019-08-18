@@ -1,0 +1,10 @@
+scheme: http https
+host: www.reecekenney.com
+
+
+
+//www.reecekenney.com
+/about/aboutUs.php
+./about/aboutUs.php
+../about/aboutUs.php
+about/aboutUs.php
